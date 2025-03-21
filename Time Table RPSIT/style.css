@@ -167,3 +167,7 @@ img {
 .subject-info tr td:not(:first-child, :nth-child(5)) {
   text-align: left;
 }
+
+#main-timetable {
+  table-layout: fixed;
+}
