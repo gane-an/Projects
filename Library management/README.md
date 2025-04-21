@@ -6,7 +6,7 @@ I used html, css and javascript to built this application.
 
 ### Live Demo
 
-[View it on GitHub Pages](https://gane-an.github.io/library-app-gan/)
+[View it on GitHub Pages](https://gane-an.github.io/Projects/Library%20management/)
 
 ## ✨ Features
 
