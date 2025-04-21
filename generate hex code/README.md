@@ -4,7 +4,7 @@
 
 ## Live Demo
 
-## [Click Here]()
+## [Click Here](https://gane-an.github.io/Projects/generate%20hex%20code/)
 
 ## Sample Screenshot
 
