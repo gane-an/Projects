@@ -4,7 +4,7 @@
 
 ## Live Demo
 
-## [Click Here](https://gane-an.github.io/Projects/generate%20hex%20code/)
+## [Click Here](https://gane-an.github.io/Projects/2-generate-random-color/)
 
 ## Sample Screenshot
 

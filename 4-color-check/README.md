@@ -6,7 +6,7 @@ A simple and clean color checker built with **HTML**, **CSS**, and **JavaScript*
 
 ## 🔗 Live Demo
 
-👉 [Check it out here](https://your-username.github.io/color-check)
+👉 [Check it out here](https://gane-an.github.io/Projects/4-color-check/)
 
 ---
 

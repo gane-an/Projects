@@ -6,7 +6,7 @@ A simple, stylish Tic Tac Toe (X/O) game built with **HTML**, **CSS**, and **Jav
 
 ## 🔗 Live Demo
 
-👉 [Check it out here](https://your-username.github.io/tic-tac-toe)
+👉 [Check it out here](https://gane-an.github.io/Projects/5-tic-tac-toe/)
 
 ---
 
