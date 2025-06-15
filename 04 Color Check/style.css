@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    130deg,
+    rgba(0, 36, 32, 1) 0%,
+    rgba(121, 9, 120, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: #fff;
+  user-select: none;
+}
+
+.link {
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: normal;
+}
+.link a {
+  color: #ffaac3;
+  text-underline-offset: 5px;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  /* background-color: #ccc; */
+}
+.copied {
+  position: fixed;
+  top: 5%;
+  right: 10%;
+  transform: translateX(200%);
+  transition: all 0.3s;
+  text-align: center;
+  opacity: 0;
+}
+.copied p {
+  /* border: 1px solid #000; */
+  padding: 0.3rem 0.5rem;
+}
+.copies {
+  transform: translateX(0);
+  opacity: 1;
+}
+.content {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 350px;
+  padding: 5px;
+}
+.head {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+input:nth-child(1)[disabled] {
+  width: 30px;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #000;
+  user-select: none !important;
+}
+input:nth-child(1)::selection {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.head form input {
+  width: calc(100%) !important;
+  padding: 5px;
+  font-size: 1.3rem;
+  outline: none;
+  border: 1px solid #ccc;
+  /* border-right: 0px; */
+}
+.head input[type="button"] {
+  padding: 5px;
+  cursor: pointer;
+}
+.content-body {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  padding: 10px;
+  place-items: center;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #ddd;
+  border-radius: 0.5rem;
+  border: 1px solid #0005;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+}
+.box span {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  &:hover {
+    cursor: copy !important;
+  }
+  height: 25px;
+}
+
+svg path {
+  fill: #000;
+  /* background: red; */
+  &:hover {
+    fill: #000;
+  }
+}
+.box span svg {
+  transition: all 0.3s ease-in-out;
+}
+
+.error {
+  position: relative;
+  top: 10px;
+}
+.errorDisplay {
+  margin-top: 10px;
+  position: absolute;
+  bottom: -20px;
+  font-size: 0.9rem;
+  left: 0;
+}
+
+.selected {
+  border: 1px solid #000 !important;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
