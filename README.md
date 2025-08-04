@@ -19,6 +19,9 @@ A collection of mini web development projects built using **HTML**, **CSS**, and
 |   3 | ⏳ **Time Table RPSIT**      | [View](https://gane-an.github.io/Projects/3-time-table-RPSIT/)      |
 |   4 | 🎨 **Color Check**           | [View](https://gane-an.github.io/Projects/4-color-check/)           |
 |   5 | ❌⭕ **Tic Tac Toe**         | [View](https://gane-an.github.io/Projects/5-tic-tac-toe/)           |
+|   6 | 🧮 **Calculator**            | [View](https://gane-an.github.io/Projects/6-calculator/)            |
+|   7 | 📕 **E-book Landing-Page**   | [View](https://gane-an.github.io/Projects/7-landing-page/)          |
+|   8 | 🐔 **TFC Static Page**       | [View](https://gane-an.github.io/Projects/8-tfc-static-web/)        |
 
 ---
 

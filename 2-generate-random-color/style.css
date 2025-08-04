@@ -25,7 +25,7 @@ body {
   /* background: transparent !important; */
   user-select: none;
 }
-.head {
+/* .head {
   font-weight: normal;
   padding: 10px;
   & a {
@@ -37,7 +37,7 @@ body {
       text-underline-offset: 5px;
     }
   }
-}
+} */
 .container {
   /* background-color: red; */
 

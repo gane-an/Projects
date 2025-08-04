@@ -14,7 +14,7 @@ body {
   background-color: var(--primary);
 }
 
-.logo {
+/* .logo {
   color: #000;
   text-align: center;
   margin-top: 10px;
@@ -22,7 +22,7 @@ body {
 .logo a {
   color: #fff;
   text-underline-offset: 5px;
-}
+} */
 
 .container {
   background: #fff;
