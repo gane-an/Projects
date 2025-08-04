@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display">
+        <input type="text" id="display" disabled />
+      </div>
+      <div class="buttons">
+        <button
+          class="btn"
+          onclick="clearDisplay()"
+          style="--btn-col: var(--clr-color)"
+        >
+          C
+        </button>
+        <button
+          class="btn"
+          onclick="deleteLast()"
+          style="--btn-col: var(--del-color)"
+        >
+          DEL
+        </button>
+        <button
+          class="btn operator"
+          style="--op: var(--op1)"
+          onclick="appendToDisplay('%')"
+        >
+          %
+        </button>
+        <button
+          class="btn operator"
+          style="--op: var(--op2)"
+          onclick="appendToDisplay('/')"
+        >
+          /
+        </button>
+
+        <button
+          class="btn"
+          onclick="appendToDisplay('7')"
+          style="--btn-col: var(--light-color)"
+        >
+          7
+        </button>
+        <button
+          class="btn"
+          onclick="appendToDisplay('8')"
+          style="--btn-col: var(--light-color)"
+        >
+          8
+        </button>
+        <button
+          class="btn"
+          onclick="appendToDisplay('9')"
+          style="--btn-col: var(--light-color)"
+        >
+          9
+        </button>
+        <button
+          class="btn operator"
+          style="--op: var(--op3)"
+          onclick="appendToDisplay('*')"
+        >
+          *
+        </button>
+
+        <button
+          class="btn"
+          onclick="appendToDisplay('4')"
+          style="--btn-col: var(--light-color)"
+        >
+          4
+        </button>
+        <button
+          class="btn"
+          onclick="appendToDisplay('5')"
+          style="--btn-col: var(--light-color)"
+        >
+          5
+        </button>
+        <button
+          class="btn"
+          onclick="appendToDisplay('6')"
+          style="--btn-col: var(--light-color)"
+        >
+          6
+        </button>
+        <button
+          class="btn operator"
+          style="--op: var(--op4)"
+          onclick="appendToDisplay('-')"
+        >
+          -
+        </button>
+
+        <button
+          class="btn"
+          onclick="appendToDisplay('1')"
+          style="--btn-col: var(--light-color)"
+        >
+          1
+        </button>
+        <button
+          class="btn"
+          onclick="appendToDisplay('2')"
+          style="--btn-col: var(--light-color)"
+        >
+          2
+        </button>
+        <button
+          class="btn"
+          onclick="appendToDisplay('3')"
+          style="--btn-col: var(--light-color)"
+        >
+          3
+        </button>
+        <button
+          class="btn operator"
+          style="--op: var(--op5)"
+          onclick="appendToDisplay('+')"
+        >
+          +
+        </button>
+
+        <button
+          class="btn"
+          onclick="appendToDisplay('(')"
+          style="--btn-col: var(--light-color)"
+        >
+          (
+        </button>
+        <button
+          class="btn"
+          onclick="appendToDisplay('0')"
+          style="--btn-col: var(--light-color)"
+        >
+          0
+        </button>
+        <button
+          class="btn"
+          onclick="appendToDisplay(')')"
+          style="--btn-col: var(--light-color)"
+        >
+          )
+        </button>
+        <button class="btn equal" onclick="calculate()">=</button>
+      </div>
+    </div>
+    <div class="note">
+      <details>
+        <summary><strong>Note:</strong></summary>
+
+        <p class="mobile" style="text-indent: 20px">
+          Use your keyboard for quick interact.
+        </p>
+        <p class="desktop" style="text-indent: 20px">
+          Use Desktop to interact with keyboard
+        </p>
+      </details>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

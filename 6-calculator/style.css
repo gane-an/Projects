@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --bg: #eaeaea;
+  --black: #000;
+  --primary-bg-color: #cfcdcd;
+  --equal-btn-color: #2980b9;
+  /* Operator colors */
+  --op1: #ff5733;
+  --op2: #33ff57;
+  --op3: #3357ff;
+  --op4: #862a5f;
+  --op5: #ffc133;
+  /* btn colors */
+  --light-color: #708090;
+  --clr-color: #b22222;
+  --del-color: #2f4f4f;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--primary-bg-color);
+  transition: background-color 0.3s, color 0.3s;
+  user-select: none;
+}
+
+.note {
+  width: 330px;
+}
+
+.calculator {
+  width: 330px;
+  background-color: var(--bg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#display {
+  width: 100%;
+  height: 50px;
+  font-size: 2rem;
+  text-align: right;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: var(--primary-bg-color);
+  color: var(--black);
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+.btn {
+  /* background-color: transparent; */
+  width: 60px;
+  height: 60px;
+  color: var(--black);
+  border: none;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+  font-size: 1.2rem;
+  padding: 20px;
+  border-radius: 10000px;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    color: var(--white);
+    box-shadow: 2px 2px 3px var(--btn-col);
+    background-color: var(--btn-col);
+    border: 1px solid var(--black);
+  }
+}
+
+.operator {
+  font-size: 1.6rem;
+
+  &:hover {
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--op);
+    border: 1px solid var(--black);
+    box-shadow: 1px 2px 3px var(--op);
+  }
+}
+
+.equal {
+  color: var(--equal-btn-color) !important;
+  font-size: 2rem;
+  background: transparent !important;
+  box-shadow: 2px 2px 3px var(--equal-btn-color);
+  border: 1px solid var(--white);
+  &:hover {
+    box-shadow: 0px 0px 4px var(--equal-btn-color);
+    border: none !important;
+  }
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.note p.desktop {
+  display: none;
+}
+/* Responsiveness */
+
+@media (max-width: 900px) {
+  .note p.mobile {
+    display: none;
+  }
+  .note p.desktop {
+    display: block;
+  }
+}
